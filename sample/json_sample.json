@@ -3,7 +3,7 @@
 	"version" : "1",
 	"browser" : "chrome",
 	"driverVersion": "87.0.4280.88",
-	"inputOrSelect": "input",
+	"systemUrl": "http://globo.com",
 	"map": [{
 		"order": 1,
 		"fieldName": "",
