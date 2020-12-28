@@ -1,4 +1,4 @@
-package br.robot;
+package br.robot.process;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -262,9 +262,9 @@ public class StepProcess implements Comparable<StepProcess> {
 	@Override
 	public int compareTo(StepProcess stepProcess) { 
 		if (this.order > stepProcess.getOrder()) { 
-			return -1; 
+			return 1; 
 		} if (this.order < stepProcess.getOrder()) { 
-			  return 1; 
+			  return -1; 
 		} 
 		return 0;
 	}

@@ -1,10 +1,12 @@
-package br.robot;
+package br.robot.process;
 
 import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+import br.robot.Browser;
 
 /**
  * System configuration entity 
@@ -26,7 +28,7 @@ public class SysConfig {
 	 * @param systemVersion
 	 * @param map
 	 */
-	public SysConfig(String systemName, String systemVersion, String browser
+	public SysConfig(String systemName, String systemVersion, Browser browser
 			, String driverVersion, Map<Integer, StepProcess> map) {
 		super();
 		this.systemName = systemName;
@@ -80,19 +82,19 @@ public class SysConfig {
 	 * System browser
 	 */
 	@JsonProperty("browser")
-	private String browser;
+	private Browser browser;
 
 	/**
 	 * @return the browser
 	 */
-	public String getBrowser() {
+	public Browser getBrowser() {
 		return this.browser;
 	}
 
 	/**
 	 * @param browser the browser to set
 	 */
-	public void setBrowser(String browser) {
+	public void setBrowser(Browser browser) {
 		this.browser = browser;
 	}
 	

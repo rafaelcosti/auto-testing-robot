@@ -3,7 +3,7 @@ package br.robot;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * 
+ * Browser list
  * @author Rafael Costi <rafaelcosti@outlook.com>
  * @version 1.0.0
  */

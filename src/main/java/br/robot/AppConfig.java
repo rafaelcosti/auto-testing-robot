@@ -81,4 +81,15 @@ public class AppConfig {
 		}
 		return this.properties.getProperty("system.file.drivers.path"); 
 	}
+	
+	/**
+	 * Get system.file.xlsx.data.worksheet
+	 * @return
+	 */
+	public String getSystemFileXlsxDataWorksheet() {
+		if (this.properties == null) {
+			return StringUtils.EMPTY;
+		}
+		return this.properties.getProperty("system.file.xlsx.data.worksheet"); 
+	}	
 }

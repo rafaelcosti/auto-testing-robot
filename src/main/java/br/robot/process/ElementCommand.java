@@ -1,4 +1,4 @@
-package br.robot;
+package br.robot.process;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -11,7 +11,8 @@ public enum ElementCommand {
 	Click,
 	InputText,
 	NotFound,
-	Submit;
+	Submit,
+	SwitchToFrame;
 	
 	/**
 	 * Get element command by name
@@ -22,7 +23,7 @@ public enum ElementCommand {
 		if (StringUtils.isEmpty(name)) {
 			return NotFound;
 		}
-		name = name.trim();
+		name = name.trim().replace(" ", "");
 		for (ElementCommand element : values()) {
 			if(element.name().equalsIgnoreCase(name)) {
 				return element;
